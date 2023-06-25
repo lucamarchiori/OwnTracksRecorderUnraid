@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>OwntracksRecorder</Name>
+  <Repository>owntracks/recorder</Repository>
+  <Registry>https://hub.docker.com/r/owntracks/recorder</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>true</Privileged>
+  <Support/>
+  <Project>https://github.com/owntracks/recorder</Project>
+  <Overview>The OwnTracks Recorder is a lightweight program for storing and accessing location data published via MQTT (or HTTP) by the OwnTracks apps. &#xD;
+&#xD;
+OTR_PORT is the MQTT port number to connect to. It is set to 1883 by default. Set it to 0 to disable MQTT and run on HTTP only.&#xD;
+&#xD;
+For this docker container it is suggested to leave both OTR_HTTPHOST and OTR_HOST set to the default "localhost", otherwiser the continer won't be able to start.&#xD;
+&#xD;
+This container is set to be up and running in HTTP mode (MQTT disabled by default), see https://github.com/owntracks/recorder#configuration-file for the list of optional additional parameters (including those to configure MQTT).&#xD;
+&#xD;
+Recorder documentation: https://github.com/owntracks/recorder&#xD;
+Recorder Docker documetnation: https://github.com/owntracks/docker-recorder/&#xD;
+&#xD;
+</Overview>
+  <Category>HomeAutomation: Tools: Other:</Category>
+  <WebUI>http://[IP]:[PORT:8083]</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.gravatar.com/avatar/fdcb529b23a27fd47fa84144675fe253?s=120&amp;amp;r=g&amp;amp;d=404</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1687707326</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires>&#xD;
+&#xD;
+</Requires>
+  <Config Name="Port" Target="8083" Default="" Mode="tcp" Description="Port to access the OwnTracks APP" Type="Port" Display="always" Required="true" Mask="false">8083</Config>
+  <Config Name="Store" Target="/store" Default="" Mode="rw" Description="Link this path to a folder where OwnTracks will save the files with GPS data." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/OwnTracksRecorder/Storage/</Config>
+  <Config Name="OTR_PORT" Target="OTR_PORT" Default="1883" Mode="" Description="MQTT port number to connect to. It is set to 1883 by default. Set it to 0 to disable MQTT." Type="Variable" Display="always" Required="false" Mask="false">0</Config>
+</Container>
