@@ -18,7 +18,7 @@ For this docker container it is suggested to leave both OTR_HTTPHOST and OTR_HOS
 This container is set to be up and running in HTTP mode (MQTT disabled by default), see https://github.com/owntracks/recorder#configuration-file for the list of optional additional parameters (including those to configure MQTT).&#xD;
 &#xD;
 Recorder documentation: https://github.com/owntracks/recorder&#xD;
-Recorder Docker documetnation: https://github.com/owntracks/docker-recorder/&#xD;
+Recorder Docker documentation: https://github.com/owntracks/docker-recorder/&#xD;
 &#xD;
 </Overview>
   <Category>HomeAutomation: Tools: Other:</Category>
