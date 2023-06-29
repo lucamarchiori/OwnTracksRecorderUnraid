@@ -6,7 +6,7 @@
   <Network>bridge</Network>
   <MyIP/>
   <Shell>bash</Shell>
-  <Privileged>true</Privileged>
+  <Privileged>false</Privileged>
   <Support/>
   <Project>https://github.com/owntracks/recorder</Project>
   <Overview>The OwnTracks Recorder is a lightweight program for storing and accessing location data published via MQTT (or HTTP) by the OwnTracks apps. &#xD;
